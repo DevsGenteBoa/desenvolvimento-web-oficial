@@ -1,9 +1,10 @@
 import Link from "next/link";
+import styles from "./Menu.module.css";
 
 const Menu = () => {
   return (
     <nav>
-      <ul>
+      <ul id={styles.menu}>
         <li>
           <Link href="/">
             <a>Home</a>
