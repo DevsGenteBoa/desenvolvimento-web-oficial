@@ -1,5 +1,16 @@
+import Desafio01 from "src/componentes/Desafios/Desafio01";
+
 const Desafios = () => {
-  return <p>Desafios - Em construção</p>;
+  return (
+    <main>
+      <h1>Desafios</h1>
+      <ol>
+        <li>
+          <Desafio01 />
+        </li>
+      </ol>
+    </main>
+  );
 };
 
 export default Desafios;
