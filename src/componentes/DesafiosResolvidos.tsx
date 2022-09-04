@@ -20,7 +20,7 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
           </Link>
           <ul>
             {resoluções.map((resolução) => (
-              <div>
+              <div key={JSON.stringify(resolução)}>
                 <p>Nome: {resolução.nome}</p>
                 <p>Tecnologias: {resolução.tecnologias}</p>
                 <a
