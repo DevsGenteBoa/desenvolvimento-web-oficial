@@ -3,7 +3,7 @@ import DesafiosResolvidos from "../DesafiosResolvidos";
 const Desafio01 = () => {
   return (
     <div>
-      <h2>Card de Funcionários xxx</h2>
+      <h2>Card de Funcionários</h2>
       <p>
         Tendo um arquivo com os dados dos profissionais e uma lista de serviços
         com os dados a serem tratados, mostrar cards com as seguintes
@@ -23,7 +23,7 @@ const Desafio01 = () => {
           </a>
         </li>
         <li>
-          <a href="/desafios/01/garfico-explicativo.png" download>
+          <a href="/desafios/01/grafico-explicativo.png" download>
             Gráfico Explicativo
           </a>
         </li>
