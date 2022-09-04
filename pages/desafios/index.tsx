@@ -1,4 +1,4 @@
-import Desafio01 from "src/componentes/Desafios/Desafio01";
+import Desafio01 from "src/components/Desafios/Desafio01";
 
 const Desafios = () => {
   return (

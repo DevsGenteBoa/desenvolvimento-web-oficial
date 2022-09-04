@@ -1,6 +1,6 @@
 import "styles/globals.css";
 import type { AppProps } from "next/app";
-import Menu from "src/componentes/Menu";
+import Menu from "src/components/Menu";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
