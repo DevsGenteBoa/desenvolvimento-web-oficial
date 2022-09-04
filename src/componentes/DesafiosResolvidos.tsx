@@ -38,7 +38,7 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
         <p>
           Não há nenhuma resolução ainda,
           <Link href="/desafios/novo">
-            <a href="/desafios/novo">seja o primeiro</a>
+            <a>seja o primeiro</a>
           </Link>
           !
         </p>
