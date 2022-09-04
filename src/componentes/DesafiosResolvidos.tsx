@@ -14,7 +14,7 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
       {resoluções.length > 0 ? (
         <div>
           <h4>Resoluções</h4>
-          <a href="#">Inclua a sua!</a>
+          <a href="/desafios/novo">Inclua a sua!</a>
           <ul>
             {resoluções.map((resolução) => (
               <div>
@@ -32,7 +32,10 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
           </ul>
         </div>
       ) : (
-        <p>Não há nenhuma resolução ainda, seja o primeiro!</p>
+        <p>
+          Não há nenhuma resolução ainda,
+          <a href="/desafios/novo">seja o primeiro</a>!
+        </p>
       )}
     </>
   );
