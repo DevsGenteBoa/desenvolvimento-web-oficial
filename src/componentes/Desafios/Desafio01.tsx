@@ -1,3 +1,5 @@
+import DesafiosResolvidos from "../DesafiosResolvidos";
+
 const Desafio01 = () => {
   return (
     <div>
@@ -31,6 +33,7 @@ const Desafio01 = () => {
           </a>
         </li>
       </ul>
+      <DesafiosResolvidos numDesafio={1} />
     </div>
   );
 };
