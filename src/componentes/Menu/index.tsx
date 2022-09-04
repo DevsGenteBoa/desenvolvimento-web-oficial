@@ -11,8 +11,11 @@ import {
 
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import Button from "../ui/buttons";
+import { useRouter } from "next/router";
 
 const Menu = () => {
+  const router = useRouter();
   const [isOpenMenuMobile, setOpenMenuMobile] = useState<boolean>(false);
   return (
     <Container>
@@ -44,9 +47,13 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <Link href="/desafios">
-                <a>Desafios</a>
-              </Link>
+              <Button
+                onClick={() => router.push("/desafios")}
+                variant="primary"
+                css="margin-left: 5px"
+              >
+                Desafios
+              </Button>
             </li>
           </Navigation>
 
