@@ -10,5 +10,11 @@
     "nome": "Robson",
     "repoLink": "https://github.com/PedroMarianoAlmeida/primeiro-desafio-dev-web-wpp",
     "tecnologias": "JavaScript, React, NextJS, HTML"
+  },
+   {
+    "desafio": 1,
+    "nome": "Tarcisio",
+    "repoLink": "https://github.com/tarcisioandrade/project-group-wpp",
+    "tecnologias": "React, Typescript"
   }
 ]
