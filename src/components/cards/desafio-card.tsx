@@ -9,7 +9,7 @@ type Desafio = {
   descricao: string;
   image?: string;
   link?: string;
-  tags?: { label: string; bg: string; color: string }[];
+  //tags?: { label: string; bg: string; color: string }[];
 };
 
 export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
