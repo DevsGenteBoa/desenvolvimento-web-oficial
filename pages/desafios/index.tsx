@@ -7,36 +7,8 @@ import Wrapper from "src/components/wrapper";
 
 import desafios from "src/base-de-dados/desafios/desafios";
 
-const desafio_exemplo = {
-  id: 1,
-  title: "Card de funcionários",
-  resumo:
-    "Crie um card de funcionários a partir de uma dada coleção de dados.",
-  descricao: `Tendo um arquivo com os dados dos profissionais e uma lista de serviços com os dados a serem tratados, mostrar cards com as seguintes informações:
-
-    Uma lista com o nome e valor de apenas serviços especiais que ele faz
-    Uma lista com nome e descrição de todos os serviços que ele faz`,
-  tags: [
-    {
-      label: "React",
-      bg: "#61dafb",
-      color: "#fff",
-    },
-    {
-      label: "Next",
-      bg: "#000",
-      color: "#fff",
-    },
-    {
-      label: "Typescript",
-      bg: "#007acc",
-      color: "#fff",
-    },
-  ],
-};
-
 const Desafios = () => {
-  console.log(desafios);
+  
   return (
     <>
       <ReactMarkdown>{desafios[0].descricao}</ReactMarkdown>
@@ -53,8 +25,8 @@ const Desafios = () => {
         >
           <h1>Desafios</h1>
           <DesafiosGrid>
-            {[1, 2, 3, 4, 5].map((i) => (
-              <DesafioCard key={i} desafio={desafio_exemplo} />
+            {desafios.map((desafio) => (
+              <DesafioCard key={desafio.id} desafio={desafio} />
             ))}
           </DesafiosGrid>
         </Wrapper>
