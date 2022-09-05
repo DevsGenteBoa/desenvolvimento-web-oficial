@@ -20,14 +20,14 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
         <ReadMore>
           <Button variant="tertiary">Ver mais</Button>
         </ReadMore>
-        <hr />
+        {/* <hr />
         <Tags>
           {desafio.tags?.map((tag) => (
             <Tag color={tag.color} bg={tag.bg}>
               <span>{tag.label}</span>
             </Tag>
           ))}
-        </Tags>
+        </Tags> */}
       </Content>
     </Card>
   );
