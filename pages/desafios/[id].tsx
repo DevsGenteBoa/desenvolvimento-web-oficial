@@ -2,13 +2,24 @@ import { Console } from "console";
 import { useRouter } from "next/router";
 import desafios from "src/base-de-dados/desafios/desafios";
 
+import ReactMarkdown from "react-markdown";
+
 const Desafio = () => {
   const router = useRouter();
   const { id } = router.query;
-  console.log(id);
+
+  const desafio = desafios.find((desafio) => desafio.id === Number(id));
+  console.log(desafio);
   return (
     <>
-      <p>Desafio</p>
+      {desafio ? (
+        <>
+          <ReactMarkdown>{desafio.descricao}</ReactMarkdown>
+          <p>Desafio</p>
+        </>
+      ) : (
+        <p>Desafio não encontrado</p>
+      )}
     </>
   );
 };

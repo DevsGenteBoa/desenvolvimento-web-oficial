@@ -11,7 +11,7 @@ const Desafios = () => {
   
   return (
     <>
-      <ReactMarkdown>{desafios[0].descricao}</ReactMarkdown>
+     
 
       <Flex>
         <Wrapper
