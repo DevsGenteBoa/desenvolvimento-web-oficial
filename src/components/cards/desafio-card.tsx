@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../ui/buttons";
 import { Card, Content, ReadMore, Tag, Tags } from "./styles";
 
@@ -18,7 +19,9 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
         <h2>{desafio.titulo}</h2>
         <p>{desafio.resumo}</p>
         <ReadMore>
-          <Button variant="tertiary">Ver mais</Button>
+          <Link href={`/desafios/${desafio.id}`}>
+            <Button variant="tertiary">Ver mais</Button>
+          </Link>
         </ReadMore>
         {/* <hr />
         <Tags>
