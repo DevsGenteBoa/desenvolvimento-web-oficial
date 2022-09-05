@@ -3,6 +3,8 @@ import { DesafiosGrid } from "src/components/Desafios/styles";
 import { Flex } from "src/components/flex";
 import Wrapper from "src/components/wrapper";
 
+import desafios from "src/base-de-dados/desafios/desafios.json";
+
 const desafio_exemplo = {
   id: 1,
   title: "Card de funcionários",
@@ -32,6 +34,7 @@ const desafio_exemplo = {
 };
 
 const Desafios = () => {
+  console.log(desafios);
   return (
     <Flex>
       <Wrapper
