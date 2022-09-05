@@ -19,26 +19,9 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
           <Link href="/desafios/novo">
             <a>Inclua a sua!</a>
           </Link>
-          <ul
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "10px",
-            }}
-          >
+          <ul>
             {resoluções.map((resolução) => (
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "18px",
-                  backgroundColor: "#fff",
-                  borderRadius: "28px",
-                  margin: "10px 0",
-                  maxWidth: "300px",
-                }}
-                key={JSON.stringify(resolução)}
-              >
+              <div key={JSON.stringify(resolução)}>
                 <strong>Nome: {resolução.nome}</strong>
                 <p>Tecnologias: {resolução.tecnologias}</p>
                 <a
