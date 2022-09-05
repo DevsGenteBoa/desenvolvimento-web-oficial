@@ -4,8 +4,8 @@ import { Card, Content, ReadMore, Tag, Tags } from "./styles";
 type Desafio = {
   id: number;
   title: string;
-  shortDescription: string;
-  description: string;
+  resumo: string;
+  descricao: string;
   image?: string;
   link?: string;
   tags?: { label: string; bg: string; color: string }[];
@@ -16,7 +16,7 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
     <Card>
       <Content>
         <h2>{desafio.title}</h2>
-        <p>{desafio.shortDescription}</p>
+        <p>{desafio.resumo}</p>
         <ReadMore>
           <Button variant="tertiary">Ver mais</Button>
         </ReadMore>

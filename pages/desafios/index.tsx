@@ -10,9 +10,9 @@ import desafios from "src/base-de-dados/desafios/desafios";
 const desafio_exemplo = {
   id: 1,
   title: "Card de funcionários",
-  shortDescription:
+  resumo:
     "Crie um card de funcionários a partir de uma dada coleção de dados.",
-  description: `Tendo um arquivo com os dados dos profissionais e uma lista de serviços com os dados a serem tratados, mostrar cards com as seguintes informações:
+  descricao: `Tendo um arquivo com os dados dos profissionais e uma lista de serviços com os dados a serem tratados, mostrar cards com as seguintes informações:
 
     Uma lista com o nome e valor de apenas serviços especiais que ele faz
     Uma lista com nome e descrição de todos os serviços que ele faz`,
