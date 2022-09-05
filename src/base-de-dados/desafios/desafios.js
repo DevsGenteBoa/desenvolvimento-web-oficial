@@ -1,4 +1,4 @@
-[
+const desafios = [
   {
     id: 1,
     titulo: "Card de Funcionários",
@@ -14,3 +14,5 @@
     tags: ["Manipulação Array", "Filtro", "HTML Select"],
   },
 ];
+
+export default desafios;
