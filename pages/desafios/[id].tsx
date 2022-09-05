@@ -9,7 +9,7 @@ const Desafio = () => {
   const { id } = router.query;
 
   const desafio = desafios.find((desafio) => desafio.id === Number(id));
-  console.log(desafio);
+
   return (
     <>
       {desafio ? (

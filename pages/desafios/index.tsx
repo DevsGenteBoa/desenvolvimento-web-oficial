@@ -1,5 +1,3 @@
-import ReactMarkdown from "react-markdown";
-
 import { DesafioCard } from "src/components/cards/desafio-card";
 import { DesafiosGrid } from "src/components/Desafios/styles";
 import { Flex } from "src/components/flex";
@@ -8,11 +6,8 @@ import Wrapper from "src/components/wrapper";
 import desafios from "src/base-de-dados/desafios/desafios";
 
 const Desafios = () => {
-  
   return (
     <>
-     
-
       <Flex>
         <Wrapper
           css="
