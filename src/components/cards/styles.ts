@@ -14,11 +14,19 @@ export const Card = styled.div`
 
   box-shadow: -4px 7px 47px rgba(0, 0, 0, 0.1);
   position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+  
+  :hover {
+    box-shadow: -4px 7px 47px rgba(0, 0, 0, 0.2);
+  }
 `;
 
 export const Content = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
   gap: 20px;
 `;
 
