@@ -3,7 +3,7 @@ import { DesafiosGrid } from "src/components/Desafios/styles";
 import { Flex } from "src/components/flex";
 import Wrapper from "src/components/wrapper";
 
-import desafios from "src/base-de-dados/desafios/desafios";
+import desafios from "../../base-de-dados/desafios/desafios";
 
 const Desafios = () => {
   return (
