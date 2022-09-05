@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 import desafios from "src/base-de-dados/desafios/desafios-resolvidos.json";
 
 interface DesafiosResolvidosProps {
@@ -20,10 +19,27 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
           <Link href="/desafios/novo">
             <a>Inclua a sua!</a>
           </Link>
-          <ul>
+          <ul
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "10px",
+            }}
+          >
             {resoluções.map((resolução) => (
-              <div key={JSON.stringify(resolução)}>
-                <p>Nome: {resolução.nome}</p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  padding: "18px",
+                  backgroundColor: "#fff",
+                  borderRadius: "28px",
+                  margin: "10px 0",
+                  maxWidth: "300px",
+                }}
+                key={JSON.stringify(resolução)}
+              >
+                <strong>Nome: {resolução.nome}</strong>
                 <p>Tecnologias: {resolução.tecnologias}</p>
                 <a
                   href={resolução.repoLink}

@@ -19,7 +19,7 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
         <h2>{desafio.titulo}</h2>
         <p>{desafio.resumo}</p>
         <ReadMore>
-          <Link href={`/desafios/${desafio.id}`}>
+          <Link href={`/desafios/detalhes/${desafio.id}`}>
             <Button variant="tertiary">Ver mais</Button>
           </Link>
         </ReadMore>
