@@ -1,8 +1,8 @@
-import { Console } from "console";
 import { useRouter } from "next/router";
-import desafios from "src/base-de-dados/desafios/desafios";
-
 import ReactMarkdown from "react-markdown";
+
+import DesafiosResolvidos from "src/components/DesafiosResolvidos";
+import desafios from "src/base-de-dados/desafios/desafios";
 
 const Desafio = () => {
   const router = useRouter();
@@ -15,7 +15,7 @@ const Desafio = () => {
       {desafio ? (
         <>
           <ReactMarkdown>{desafio.descricao}</ReactMarkdown>
-          <p>Desafio</p>
+          <DesafiosResolvidos numDesafio={Number(id)} />
         </>
       ) : (
         <p>Desafio não encontrado</p>
