@@ -59,7 +59,7 @@ export const NavigationMobile = styled.ul<{ isOpen: boolean }>`
   padding: 10px;
   margin: 0;
   list-style: none;
-  z-index: 999;
+  z-index: 998;
   li {
     a {
       font-size: 2rem;
@@ -104,5 +104,5 @@ export const Hamburger = styled.div`
   }
   font-size: 2.2rem;
   cursor: pointer;
-  z-index: 100;
+  z-index: 999;
 `;
