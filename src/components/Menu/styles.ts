@@ -59,6 +59,7 @@ export const NavigationMobile = styled.ul<{ isOpen: boolean }>`
   padding: 10px;
   margin: 0;
   list-style: none;
+  z-index: 999;
   li {
     a {
       font-size: 2rem;
