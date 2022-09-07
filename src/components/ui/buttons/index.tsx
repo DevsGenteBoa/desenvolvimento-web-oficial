@@ -7,12 +7,12 @@ const Button = styled.button<{ variant?: Variant; css?: string }>`
     const variants: { [key in Variant]: string } = {
       primary: `
         font-weight: 600;
-        background-color: #FFB951;
+        background-color: #ff8416;
         color: #fff;
         `,
       secondary: `
         font-weight: 500;
-        color: #FFB951;
+        color: #ff8416;
         `,
       tertiary: `
         font-weight: 500;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div<{ css?: string }>`
-  width: 1440px;
+  width: 1024px;
   @media (max-width: 1440px) {
     max-width: 100%;
   }
