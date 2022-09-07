@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Button from "../ui/buttons";
+import Button from "../../ui/buttons";
 import { Card, Content, ReadMore, Tag, Tags } from "./styles";
 
 type Desafio = {
