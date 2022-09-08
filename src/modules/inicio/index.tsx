@@ -26,7 +26,7 @@ export default function Inicio() {
             target="_blank"
             rel="noreferrer"
           >
-            Clique aqui e contribua com o projeto :D
+            Clique aqui e contribua com o projeto.
           </a>
         </Contribua>
       </Wrapper>

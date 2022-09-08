@@ -17,6 +17,8 @@ import { useRouter } from "next/router";
 const Menu = () => {
   const router = useRouter();
   const [isOpenMenuMobile, setOpenMenuMobile] = useState<boolean>(false);
+  const hiddleButton = router.asPath === "/desafios";
+
   return (
     <Container>
       <Wrapper>
@@ -30,17 +32,19 @@ const Menu = () => {
           >
             <GiHamburgerMenu />
           </Hamburger>
-          <Navigation>
-            <li>
-              <Button
-                onClick={() => router.push("/desafios")}
-                variant="primary"
-                css="margin-left: 5px"
-              >
-                Desafios
-              </Button>
-            </li>
-          </Navigation>
+          {!hiddleButton && (
+            <Navigation>
+              <li>
+                <Button
+                  onClick={() => router.push("/desafios")}
+                  variant="primary"
+                  css="margin-left: 5px"
+                >
+                  Desafios
+                </Button>
+              </li>
+            </Navigation>
+          )}
 
           <NavigationMobile isOpen={isOpenMenuMobile}>
             <li>
