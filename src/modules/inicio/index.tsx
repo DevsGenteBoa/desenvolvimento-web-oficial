@@ -1,7 +1,5 @@
 import Wrapper from "src/components/wrapper";
 import HeroSection from "./sections/hero";
-import SobreSection from "./sections/sobre";
-
 import { AiFillGithub } from "react-icons/ai";
 import { Contribua } from "./styles";
 

@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  min-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 200px;
+  margin-top: 78px;
   h1 {
     font-size: 2rem;
   }
   p {
     font-size: 1.2rem;
+    line-height: 1.4;
   }
   img {
     @keyframes ani {

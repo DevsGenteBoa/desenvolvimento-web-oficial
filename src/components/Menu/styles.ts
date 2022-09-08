@@ -29,9 +29,9 @@ export const Navigation = styled.ul`
     a {
       text-decoration: none;
       color: #1f1f1f;
-      padding: 5px 10px;
+      padding: 10px;
+      border-radius: 8px;
       transition: background-color 0.2s ease-in-out;
-      border-radius: 22px;
       :hover {
         background-color: rgba(0, 0, 0, 0.06);
       }
@@ -47,8 +47,8 @@ export const NavigationMobile = styled.ul<{ isOpen: boolean }>`
   position: fixed;
   ${({ isOpen }) => (isOpen ? "left: 0;" : "left: 150%;")}
   transition: left 0.2s ease-in-out;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,9 +83,7 @@ export const Logo = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 200px;
-  height: 100%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #1f1f1f;
   margin: 0;

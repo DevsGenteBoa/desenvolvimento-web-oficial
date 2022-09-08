@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useRouter } from "next/router";
 import { Flex } from "src/components/flex";
 import Button from "src/components/ui/buttons";
@@ -18,7 +19,7 @@ export default function HeroSection() {
             desafios e projetos que possam ser desenvolvidos pelo grupo.
           </p>
           <Button variant="primary" onClick={() => router.push("/desafios")}>
-            Desafios recentes
+            Desafios Recentes
           </Button>
         </Flex>
         <div>
