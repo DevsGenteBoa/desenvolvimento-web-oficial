@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.section`
+  margin-top: 78px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 200px;
-  margin-top: 78px;
   h1 {
     font-size: 2rem;
   }
@@ -30,11 +30,9 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 100px;
-    padding: 0 60px;
-    text-align: center;
-    div {
-      align-items: center;
+    gap: 0;
+    div img {
+      display: none;
     }
   }
 `;

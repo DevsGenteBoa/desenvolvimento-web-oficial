@@ -32,21 +32,6 @@ const Menu = () => {
           </Hamburger>
           <Navigation>
             <li>
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/sobre">
-                <a>Sobre</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/redes-sociais">
-                <a>Redes Sociais</a>
-              </Link>
-            </li>
-            <li>
               <Button
                 onClick={() => router.push("/desafios")}
                 variant="primary"
