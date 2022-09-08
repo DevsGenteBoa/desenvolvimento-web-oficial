@@ -23,6 +23,7 @@ export default function Inicio() {
           <a
             href="https://github.com/PedroMarianoAlmeida/desenvolvimento-web-oficial"
             target="_blank"
+            rel="noreferrer"
           >
             Clique aqui e contribua com o projeto :D
           </a>
