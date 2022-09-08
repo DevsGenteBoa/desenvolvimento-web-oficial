@@ -17,8 +17,5 @@
       "ecmaVersion": 12,
       "sourceType": "module"
     },
-    "plugins": ["@typescript-eslint"],
-    "rules": {
-        "semi": [2, "always"]
-    }
+    "plugins": ["@typescript-eslint"]
 }
