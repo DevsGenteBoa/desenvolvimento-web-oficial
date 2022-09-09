@@ -6,7 +6,7 @@ const Button = styled.button<{ variant?: Variant; css?: string }>`
   ${(props) => {
     const variants: { [key in Variant]: string } = {
       primary: `
-        font-weight: 600;
+        font-weight: 500;
         background-color: #ff8416;
         color: #fff;
         `,
@@ -24,7 +24,7 @@ const Button = styled.button<{ variant?: Variant; css?: string }>`
   border-radius: 8px;
   padding: 10px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: opacity 0.2s ease-in-out;
   :hover {
     opacity: 0.8;
