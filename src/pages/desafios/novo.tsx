@@ -15,7 +15,7 @@ const Novo = () => {
             repositório oficial
           </a>{" "}
           e faça um Pull Request alterando o arquivo{" "}
-          <b>src/desafios-resolvidos.json</b> com suas informações (basta seguir
+          <b>src/desafiosResolvidos.json</b> com suas informações (basta seguir
           o padrão de objeto de JSON que tem lá)
         </li>
         <li>Informe para algum moderador</li>

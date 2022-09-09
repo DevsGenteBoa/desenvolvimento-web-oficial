@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Link from 'next/link'
-import { DesafioCard } from "src/components/cards/desafio-card";
-import { DesafiosGrid } from "src/components/Desafios/styles";
+import { DesafioCard } from "src/components/cards/desafioCard";
+import { DesafiosGrid } from "src/components/desafios/styles";
 import { Flex } from "src/components/flex";
 import SearchInput from "src/components/ui/inputs/search";
 import Wrapper from "src/components/wrapper";
 
-import desafios from "../../assets/base-de-dados/desafios/desafios";
+import desafios from "../../assets/baseDeDados/desafios/desafios";
 import { PageTitle } from "./styles";
 
 const DesafiosPage = () => {
