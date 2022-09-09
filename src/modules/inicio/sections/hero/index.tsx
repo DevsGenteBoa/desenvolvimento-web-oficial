@@ -2,7 +2,6 @@
 import { useRouter } from "next/router";
 import { Flex } from "src/components/flex";
 import Button from "src/components/ui/buttons";
-import Wrapper from "src/components/wrapper";
 import { Container } from "./styles";
 
 export default function HeroSection() {

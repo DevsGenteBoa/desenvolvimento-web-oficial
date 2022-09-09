@@ -7,8 +7,8 @@ export default function SobreSection() {
       <Title>Sobre</Title>
       <FlexContainer>
         <p>
-          Comunidade online com propósito de ajudar os desenvidores web em
-          diversos pontos na sua jornada, temos desde a galera inicante no
+          Comunidade online com propósito de ajudar os desenvolvedores web em
+          diversos pontos na sua jornada, temos desde a galera no
           inicio dos estudos, passando por estudantes que tiram diversas
           dúvidas, a galera que está na busca da primeira oportunidade e os
           Plenos e Sêniores que dão todo o suporte.

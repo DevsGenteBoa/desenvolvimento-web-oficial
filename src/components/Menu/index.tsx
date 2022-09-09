@@ -26,13 +26,13 @@ const Menu = () => {
           <Logo>
             <Link href="/">Desenvolvimento Web</Link>
           </Logo>
-          <Hamburger
+          {/* <Hamburger
             onClick={() => setOpenMenuMobile(!isOpenMenuMobile)}
             style={{ color: isOpenMenuMobile ? "#fff" : "#000" }}
           >
             <GiHamburgerMenu />
-          </Hamburger>
-          {!hiddleButton && (
+          </Hamburger> */}
+          {/* {!hiddleButton && (
             <Navigation>
               <li>
                 <Button
@@ -44,9 +44,9 @@ const Menu = () => {
                 </Button>
               </li>
             </Navigation>
-          )}
+          )} */}
 
-          <NavigationMobile isOpen={isOpenMenuMobile}>
+          {/* <NavigationMobile isOpen={isOpenMenuMobile}>
             <li>
               <Link href="/">
                 <a>Home</a>
@@ -67,7 +67,7 @@ const Menu = () => {
                 <a>Desafios</a>
               </Link>
             </li>
-          </NavigationMobile>
+          </NavigationMobile> */}
         </Header>
       </Wrapper>
     </Container>
