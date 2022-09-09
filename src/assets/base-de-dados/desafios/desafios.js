@@ -12,6 +12,7 @@ const desafios = [
     link: "",
     image: "",
     tags: ["Manipulação Array", "Filtro", "HTML Select"],
+    anexos: [{nome: "Resumo", arquivo: "resumo-desafio.txt"}, {nome: "Banco de Dados", arquivo: "banco-de-dados.png"}, {nome: "Gráfico Explicativo", arquivo: "grafico-explicativo.png"}]
   },
   {
     id: 2,
