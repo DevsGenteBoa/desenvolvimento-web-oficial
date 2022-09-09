@@ -1,6 +1,6 @@
-import DiscordIcon from "src/components/ui/svgs/DiscordIcon";
-import LinkedinIcon from "src/components/ui/svgs/Linkedin";
-import WhatsappIcon from "src/components/ui/svgs/WhatsappIcon";
+import DiscordIcon from "src/components/ui/svgs/discord-icon";
+import LinkedinIcon from "src/components/ui/svgs/linkedin";
+import WhatsappIcon from "src/components/ui/svgs/whatsapp-icon";
 import { Container, Title, SociaisUL } from "./styles";
 const SociaisSection = () => {
   return (
