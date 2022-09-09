@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  min-height: 600px;
+export const Container = styled.section`
+  margin-top: 78px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +11,7 @@ export const Container = styled.div`
   }
   p {
     font-size: 1.2rem;
+    line-height: 1.4;
   }
   img {
     @keyframes ani {
@@ -29,11 +30,9 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 100px;
-    padding: 0 60px;
-    text-align: center;
-    div {
-      align-items: center;
+    gap: 0;
+    div img {
+      display: none;
     }
   }
 `;

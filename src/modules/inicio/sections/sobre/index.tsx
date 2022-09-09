@@ -1,16 +1,22 @@
+import SvgSobre from "src/components/ui/svgs/SvgSobre";
+import { Container, Title, FlexContainer, BoxSvg } from "./styles";
+
 export default function SobreSection() {
   return (
-    <div>
-      <p>
-        Participe do nosso{" "}
-        <a
-          href="https://chat.whatsapp.com/HTt7FwitQ9v6GnJ0VywgQw"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          grupo do whatsapp
-        </a>
-      </p>
-    </div>
+    <Container>
+      <Title>Sobre</Title>
+      <FlexContainer>
+        <p>
+          Comunidade online com propósito de ajudar os desenvidores web em
+          diversos pontos na sua jornada, temos desde a galera inicante no
+          inicio dos estudos, passando por estudantes que tiram diversas
+          dúvidas, a galera que está na busca da primeira oportunidade e os
+          Plenos e Sêniores que dão todo o suporte.
+        </p>
+        <BoxSvg>
+          <SvgSobre />
+        </BoxSvg>
+      </FlexContainer>
+    </Container>
   );
 }

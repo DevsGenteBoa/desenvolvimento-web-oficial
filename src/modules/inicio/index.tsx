@@ -1,9 +1,9 @@
 import Wrapper from "src/components/wrapper";
 import HeroSection from "./sections/hero";
-import SobreSection from "./sections/sobre";
-
 import { AiFillGithub } from "react-icons/ai";
 import { Contribua } from "./styles";
+import SobreSection from "./sections/sobre";
+import SociaisSection from "./sections/sociais";
 
 export default function Inicio() {
   return (
@@ -17,7 +17,8 @@ export default function Inicio() {
     >
       <Wrapper>
         <HeroSection />
-        {/* <SobreSection /> */}
+        <SobreSection />
+        <SociaisSection />
         <Contribua>
           <AiFillGithub />
           <a
@@ -25,7 +26,7 @@ export default function Inicio() {
             target="_blank"
             rel="noreferrer"
           >
-            Clique aqui e contribua com o projeto :D
+            Clique aqui e contribua com o projeto.
           </a>
         </Contribua>
       </Wrapper>
