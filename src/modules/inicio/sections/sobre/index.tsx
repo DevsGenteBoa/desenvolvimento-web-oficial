@@ -1,4 +1,4 @@
-import SvgSobre from "src/components/ui/svgs/SvgSobre";
+import SvgSobre from "src/components/ui/svgs/svg-sobre";
 import { Container, Title, FlexContainer, BoxSvg } from "./styles";
 
 export default function SobreSection() {
