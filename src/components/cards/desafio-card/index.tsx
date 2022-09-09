@@ -14,7 +14,7 @@ type Desafio = {
 };
 
 export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
-  console.log(desafio.anexos)
+  
   return (
     <Card>
       <Content>
@@ -33,6 +33,12 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
             </Tag>
           ))}
         </Tags> */}
+        {desafio.anexos ? <>
+        <h4>Anexos</h4>
+        <ul>
+          {desafio.anexos.map(anexo => <li key={anexo.nome}><a href={`desafios/${desafio.id}/${anexo.arquivo}`} download>{anexo.nome}</a></li>)}
+        </ul>
+        </> : null}
       </Content>
     </Card>
   );
