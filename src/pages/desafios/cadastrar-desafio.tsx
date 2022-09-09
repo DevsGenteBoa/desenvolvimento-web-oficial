@@ -23,7 +23,7 @@ const CadastrarDesafio = () => {
             <li><b>id: </b>Chave Única do seu desafio - <small>seguir ordem numérica sequencial</small></li>
             <li><b>titulo: </b>Título do desafio - <small>e do card</small></li>
             <li><b>resumo: </b>Texto menor do desafio - <small>aparece no card</small></li>
-            <li><b>descricao: </b>Texto maior que será exibido ao clicar em <i>Ver Mais</i> - <small>pode ser escrito em <b>Markdown</b> (como ele pode ocupar mais de uma linha, foi utilizado os 'String Literals' - os ``, que não são suportados em .json, e por isso foi utilizado JavaScript)</small></li>        
+            <li><b>descricao: </b>Texto maior que será exibido ao clicar em <i>Ver Mais</i> - <small>pode ser escrito em <b>Markdown</b> (como ele pode ocupar mais de uma linha, foi utilizado os String Literals - os ``, que não são suportados em .json, e por isso foi utilizado JavaScript)</small></li>        
         </ul>
 
         <h3>Itens Opcionais</h3>
