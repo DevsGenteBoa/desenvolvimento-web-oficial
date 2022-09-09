@@ -9,10 +9,12 @@ type Desafio = {
   descricao: string;
   image?: string;
   link?: string;
+  anexos?: {nome: string; arquivo: string;}[]
   //tags?: { label: string; bg: string; color: string }[];
 };
 
 export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
+  console.log(desafio.anexos)
   return (
     <Card>
       <Content>
