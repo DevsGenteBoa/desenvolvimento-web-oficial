@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import { Container } from "src/components/container";
 
-import DesafiosResolvidos from "src/components/DesafiosResolvidos";
+import DesafiosResolvidos from "src/components/desafios-resolvidos";
 import Wrapper from "src/components/wrapper";
 import desafios from "../../../assets/base-de-dados/desafios/desafios";
 import { DesafioContainer, Title } from "./styles";
