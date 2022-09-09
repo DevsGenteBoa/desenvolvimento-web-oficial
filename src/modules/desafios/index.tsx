@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link'
 import { DesafioCard } from "src/components/cards/desafio-card";
 import { DesafiosGrid } from "src/components/Desafios/styles";
 import { Flex } from "src/components/flex";
@@ -29,6 +30,7 @@ const DesafiosPage = () => {
               action={(e) => setFilter(e.target.value)}
             />
           </PageTitle>
+          <Link href="desafios/cadastrar-desafio"><a>Crie um desafio</a></Link>
           <DesafiosGrid>
             {(
               desafios.filter(
