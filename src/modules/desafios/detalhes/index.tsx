@@ -1,14 +1,14 @@
-import ReactMarkdown from "react-markdown";
-import { Container } from "src/components/container";
+import ReactMarkdown from 'react-markdown';
+import { Container } from 'src/components/container';
 
-import DesafiosResolvidos from "src/components/desafios-resolvidos";
-import Wrapper from "src/components/wrapper";
-import desafios from "../../../assets/base-de-dados/desafios/desafios";
-import { DesafioContainer, Title } from "./styles";
+import DesafiosResolvidos from 'src/components/desafios-resolvidos';
+import Wrapper from 'src/components/wrapper';
+import desafios from '../../../assets/base-de-dados/desafios/desafios';
+import { DesafioContainer, Title } from './styles';
 
 const DesafioDetalhePage = ({ id }: { id: string }) => {
   const desafio = desafios.find((desafio: any) => desafio.id === Number(id));
-  
+
   return (
     <Container>
       <Wrapper>
@@ -20,6 +20,23 @@ const DesafioDetalhePage = ({ id }: { id: string }) => {
           {desafio ? (
             <>
               <ReactMarkdown>{desafio.descricao}</ReactMarkdown>
+              {desafio.anexos ? (
+                <>
+                  <h4>Anexos</h4>
+                  <ul>
+                    {desafio.anexos.map((anexo) => (
+                      <li key={anexo.nome}>
+                        <a
+                          href={`desafios/${desafio.id}/${anexo.arquivo}`}
+                          download
+                        >
+                          {anexo.nome}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              ) : null}
               <DesafiosResolvidos numDesafio={Number(id)} />
             </>
           ) : (
