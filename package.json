@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
     "audit": "npm audit --registry=https://registry.npmjs.org/",
     "audit:fix": "npm audit fix --registry=https://registry.npmjs.org/"
   },

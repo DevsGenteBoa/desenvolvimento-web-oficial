@@ -34,10 +34,10 @@ Apos analise sua contribuição será mandada para o repositorio :)
 
 
 ### Como rodar
-
+- Certifique-se de estar usando o node em uma versão entre 16.15.0 e 17.0.0
 - Faça um "git clone" do projeto para uma pasta local
-- Faça um "npm install" ou "yarn install" para instalar dependencias do projeto
-- Para rodar o servidor local "npm run dev" ou "yarn dev" 
+- Rode o comando "yarn" para instalar dependencias do projeto
+- Para rodar o servidor local utilize "yarn dev" 
 - O projeto será aberto no em "http://localhost:3000"
 
 
@@ -49,6 +49,7 @@ Apos analise sua contribuição será mandada para o repositorio :)
 - Next.js
 - TypeScript
 - JavaScript
+- Node.js
 - Styled Components
 - HTML
 - CSS
