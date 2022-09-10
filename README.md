@@ -38,7 +38,7 @@ Apos analise sua contribuição será mandada para o repositorio :)
 - Faça um "git clone" do projeto para uma pasta local
 - Rode o comando "yarn" para instalar dependencias do projeto
 - Para rodar o servidor local utilize "yarn dev" 
-- O projeto será aberto no em "http://localhost:3000"
+- O projeto será aberto em "http://localhost:3000"
 
 
 ## Tecnologias

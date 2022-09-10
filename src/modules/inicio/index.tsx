@@ -1,5 +1,4 @@
-import Wrapper from "src/components/wrapper";
-import HeroSection from "./sections/hero";
+import HeroSection from "./sections/Hero/Hero";
 import { AiFillGithub } from "react-icons/ai";
 import { Contribua } from "./styles";
 import SobreSection from "./sections/sobre";
@@ -7,15 +6,7 @@ import SociaisSection from "./sections/sociais";
 
 export default function Inicio() {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
-      <Wrapper>
+    <main>
         <HeroSection />
         <SobreSection />
         <SociaisSection />
@@ -29,7 +20,6 @@ export default function Inicio() {
             Clique aqui e contribua com o projeto.
           </a>
         </Contribua>
-      </Wrapper>
-    </div>
+    </main>
   );
 }

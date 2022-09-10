@@ -1,44 +1,50 @@
-import DiscordIcon from "src/components/ui/svgs/discord-icon";
-import LinkedinIcon from "src/components/ui/svgs/linkedin";
-import WhatsappIcon from "src/components/ui/svgs/whatsapp-icon";
-import { Container, Title, SociaisUL } from "./styles";
+import Container from 'src/components/container';
+import { FaWhatsapp, FaDiscord, FaLinkedin } from 'react-icons/fa';
+import { SocialWrapper, SocialTitle, SocialIcons } from './styles';
 const SociaisSection = () => {
   return (
-    <Container>
-      <Title>Redes Sociais</Title>
-      <p>
-        Venha fazer parte da comunidade, participe das nossas redes sociais.
-      </p>
-      <SociaisUL>
-        <li>
-          <a
-            href="https://chat.whatsapp.com/HTt7FwitQ9v6GnJ0VywgQw"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <WhatsappIcon />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://discord.gg/PjpYsPhtpx"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <DiscordIcon />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/groups/12670203/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedinIcon />
-          </a>
-        </li>
-      </SociaisUL>
-    </Container>
+    <section id="social">
+      <Container>
+        <SocialWrapper>
+          <SocialTitle>
+            <h2>Redes Sociais</h2>
+            <p>
+              Venha fazer parte da comunidade, participe das nossas redes
+              sociais.
+            </p>
+          </SocialTitle>
+          <SocialIcons>
+            <div>
+              <a
+                href="https://chat.whatsapp.com/HTt7FwitQ9v6GnJ0VywgQw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp size={34} />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://discord.gg/PjpYsPhtpx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaDiscord size={34} />
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://www.linkedin.com/groups/12670203/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin size={34} />
+              </a>
+            </div>
+          </SocialIcons>
+        </SocialWrapper>
+      </Container>
+    </section>
   );
 };
 

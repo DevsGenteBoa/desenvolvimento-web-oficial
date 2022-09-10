@@ -1,31 +1,38 @@
 import styled from "styled-components";
+import { device } from "src/components/devices";
 
-export const Container = styled.section`
-  margin-top: 78px;
-  p {
-    font-size: 1.2rem;
-    line-height: 1.4;
-  }
-`;
 
-export const Title = styled.div`
-  font-size: 2rem;
-  margin-bottom: 24px;
-  font-weight: 500;
-`;
 
-export const FlexContainer = styled.div`
-  display: flex;
-  gap: 200px;
-
-  @media (max-width: 768px) {
+const AboutWrapper = styled.div`
+    display: flex;
     flex-direction: column;
-    gap: 100px;
-  }
+    align-items: center;
 `;
 
-export const BoxSvg = styled.div`
-  @media (max-width: 768px) {
-    display: none;
-  }
+const Left = styled.div`
+    padding:2rem 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    @media ${device.tablet} {
+        h2 {
+            font-size: 1.7rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
 `;
+
+
+
+
+export { Left, AboutWrapper }
