@@ -49,3 +49,18 @@ export const Anexo = styled.li`
     }
   }
 `;
+
+export const Descricao = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  ul {
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #f5f5f5;
+    list-style: none;
+    gap: 16px;
+    line-height: 1.5rem;
+  }
+  margin-bottom: 32px;
+`;
