@@ -28,7 +28,7 @@ const CadastrarDesafio = () => {
 
         <h3>Itens Opcionais</h3>
         <ul>
-            <li><b>tags: </b>Uma array com as palavras chaves do desafio - <small>Não está funcionando ainda por causa do lance das cores, tem uma issue no repositório</small> </li>
+            <li><b>tags: </b>Uma array com as palavras chaves do desafio</li>
             <li><b>anexos: </b> Caso precise incluir arquivos no desafio, devem ser incluídos na mesma Pull Request em uma nova pasta no local <u>public/desafios/[id_do_desafio]</u>, e incluir nesse campo uma array de objetos com os campos nome (com o nome que você quer que apareça), e arquivo (com o nome exato do arquivo e extensão, recomendo usar <a href="https://www.alura.com.br/artigos/convencoes-nomenclatura-camel-pascal-kebab-snake-case" target="_blank" rel="noopener noreferrer">snake ou kebab case</a> para nomear o arquivo</li>           
         </ul>
     </>
