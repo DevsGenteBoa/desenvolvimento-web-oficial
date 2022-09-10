@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DesafioContainer = styled.div`
-  border-radius: 28px;
+  border-radius: 15px;
   border: 2px solid rgba(0, 0, 0, 0.1);
 
   display: flex;
