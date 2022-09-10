@@ -21,7 +21,7 @@ const Button = styled.button<{ variant?: Variant; css?: string }>`
     return variants[props.variant as Variant];
   }}
   border: 0;
-  border-radius: 8px;
+  border-radius: 15px;
   padding: 10px;
   cursor: pointer;
   font-size: 1.2rem;

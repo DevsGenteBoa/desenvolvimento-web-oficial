@@ -1,6 +1,7 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import desafios from "src/assets/base-de-dados/desafios/desafios-resolvidos.json";
+import desafios from 'src/assets/base-de-dados/desafios/desafios-resolvidos.json';
+import { Container, SolucoesGrid } from './styles';
 
 interface DesafiosResolvidosProps {
   numDesafio: number;
@@ -8,32 +9,32 @@ interface DesafiosResolvidosProps {
 
 const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
   const resoluções = desafios.filter(
-    (desafio) => desafio.desafio == numDesafio
+    (desafio) => desafio.desafio == numDesafio,
   );
 
   return (
-    <>
+    <Container>
       {resoluções.length > 0 ? (
         <div>
           <h4>Resoluções</h4>
           <Link href="/desafios/novo">
             <a>Inclua a sua!</a>
           </Link>
-          <ul>
+          <SolucoesGrid>
             {resoluções.map((resolução) => (
               <div key={JSON.stringify(resolução)}>
-                <strong>Nome: {resolução.nome}</strong>
+                <strong>{resolução.nome}</strong>
                 <p>Tecnologias: {resolução.tecnologias}</p>
                 <a
                   href={resolução.repoLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  link
+                  Repositório
                 </a>
               </div>
             ))}
-          </ul>
+          </SolucoesGrid>
         </div>
       ) : (
         <p>
@@ -44,7 +45,7 @@ const DesafiosResolvidos = ({ numDesafio }: DesafiosResolvidosProps) => {
           !
         </p>
       )}
-    </>
+    </Container>
   );
 };
 

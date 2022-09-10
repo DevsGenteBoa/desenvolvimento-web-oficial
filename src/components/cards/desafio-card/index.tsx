@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Button from "../../ui/buttons";
-import { Card, Content, ReadMore, Tag, Tags } from "./styles";
+import Link from 'next/link';
+import Button from '../../ui/buttons';
+import { Card, Content, ReadMore, Tag, Tags } from './styles';
 
 type Desafio = {
   id: number;
@@ -9,12 +9,12 @@ type Desafio = {
   descricao: string;
   image?: string;
   link?: string;
-  anexos?: {nome: string; arquivo: string;}[]
+  anexos?: { nome: string; arquivo: string }[];
   //tags?: { label: string; bg: string; color: string }[];
+  tags: string[];
 };
 
 export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
-  
   return (
     <Card>
       <Content>
@@ -25,20 +25,16 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
             <Button variant="tertiary">Ver mais</Button>
           </Link>
         </ReadMore>
-        {/* <hr />
+        <hr />
         <Tags>
           {desafio.tags?.map((tag) => (
-            <Tag color={tag.color} bg={tag.bg}>
-              <span>{tag.label}</span>
+            <Tag
+                key={tag}
+            >
+              <span>{tag}</span>
             </Tag>
           ))}
-        </Tags> */}
-        {desafio.anexos ? <>
-        <h4>Anexos</h4>
-        <ul>
-          {desafio.anexos.map(anexo => <li key={anexo.nome}><a href={`desafios/${desafio.id}/${anexo.arquivo}`} download>{anexo.nome}</a></li>)}
-        </ul>
-        </> : null}
+        </Tags>
       </Content>
     </Card>
   );
