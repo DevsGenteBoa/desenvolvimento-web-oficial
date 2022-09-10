@@ -1,10 +1,11 @@
+import { AiFillFile } from 'react-icons/ai';
 import ReactMarkdown from 'react-markdown';
 import { Container } from 'src/components/container';
 
 import DesafiosResolvidos from 'src/components/desafios-resolvidos';
 import Wrapper from 'src/components/wrapper';
 import desafios from '../../../assets/base-de-dados/desafios/desafios';
-import { DesafioContainer, Title } from './styles';
+import { Anexo, AnexosContainer, DesafioContainer, Title } from './styles';
 
 const DesafioDetalhePage = ({ id }: { id: string }) => {
   const desafio = desafios.find((desafio: any) => desafio.id === Number(id));
@@ -16,29 +17,31 @@ const DesafioDetalhePage = ({ id }: { id: string }) => {
           <Title>
             <h1>{desafio?.titulo}</h1>
           </Title>
-          <hr />
           {desafio ? (
-            <>
+            <div>
               <ReactMarkdown>{desafio.descricao}</ReactMarkdown>
               {desafio.anexos ? (
-                <>
+                <div>
                   <h4>Anexos</h4>
-                  <ul>
+                  <AnexosContainer>
                     {desafio.anexos.map((anexo) => (
-                      <li key={anexo.nome}>
+                      <Anexo key={anexo.nome}>
+                        <i>
+                          <AiFillFile style={{}} />
+                        </i>
                         <a
                           href={`desafios/${desafio.id}/${anexo.arquivo}`}
                           download
                         >
                           {anexo.nome}
                         </a>
-                      </li>
+                      </Anexo>
                     ))}
-                  </ul>
-                </>
+                  </AnexosContainer>
+                </div>
               ) : null}
               <DesafiosResolvidos numDesafio={Number(id)} />
-            </>
+            </div>
           ) : (
             <p>Desafio não encontrado</p>
           )}
