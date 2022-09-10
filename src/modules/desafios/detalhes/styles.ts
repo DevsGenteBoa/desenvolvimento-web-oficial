@@ -20,7 +20,7 @@ export const AnexosContainer = styled.ul`
   flex-wrap: wrap;
   list-style: none;
   gap: 16px;
-
+  margin-bottom: 16px;
   padding: 10px;
 `;
 export const Anexo = styled.li`
