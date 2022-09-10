@@ -11,6 +11,7 @@ type Desafio = {
   link?: string;
   anexos?: { nome: string; arquivo: string }[];
   //tags?: { label: string; bg: string; color: string }[];
+  tags: string[];
 };
 
 export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
@@ -24,14 +25,16 @@ export const DesafioCard = ({ desafio }: { desafio: Desafio }) => {
             <Button variant="tertiary">Ver mais</Button>
           </Link>
         </ReadMore>
-        {/* <hr />
+        <hr />
         <Tags>
           {desafio.tags?.map((tag) => (
-            <Tag color={tag.color} bg={tag.bg}>
-              <span>{tag.label}</span>
+            <Tag
+                key={tag}
+            >
+              <span>{tag}</span>
             </Tag>
           ))}
-        </Tags> */}
+        </Tags>
       </Content>
     </Card>
   );

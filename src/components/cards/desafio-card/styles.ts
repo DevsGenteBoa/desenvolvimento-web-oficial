@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   width: 100%;
-  max-width: 400px;
   background-color: #fff;
   border-radius: 15px;
   display: flex;
@@ -24,7 +23,12 @@ export const Content = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
   gap: 20px;
+
+  hr {
+    width: 100%;
+  }
 `;
 
 export const ReadMore = styled.div`
@@ -45,10 +49,10 @@ export const Tags = styled.div`
 export const Tag = styled.div<{ bg?: string; color?: string }>`
   display: flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 3px 7px;
   border-radius: 15px;
   font-weight: 500;
   font-size: 14px;
-  background-color: ${({ bg }) => bg || '#fff'};
-  color: ${({ color }) => color || '#000'};
+  background-color: ${({ bg }) => bg || 'rgba(0, 0, 0, 0.05)'};
+  color: ${({ color }) => color};
 `;
