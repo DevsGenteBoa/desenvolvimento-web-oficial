@@ -24,6 +24,7 @@ const desafios = [
     resumo:
       'Descobrir se um número é par',
     descricao: `Criar uma função que recebe um número como argumento, essa função deve retornar verdadeiro com o número é par (e falso quando o número é impar):
+
     Exemplo
     - função éPar(2) //retorna o valor true
     - função éPar(5) //retorna o valor false
@@ -36,6 +37,7 @@ const desafios = [
     resumo:
       'Descobrir se um número é par ou impar',
     descricao: `Criar uma função que recebe um número como argumento, essa função deve retornar o texto "par" (quanto o número inserido for par) ou "ímar" (quanto o número inserido for ímpar):
+
     Exemplo
     - função parOuÍmar(2) //retorna o valor "par"
     - função parOuÍmar(5) //retorna o valor "ímpar"
@@ -48,6 +50,7 @@ const desafios = [
     resumo:
       'Descobrir se um número é múltiplo de 7',
     descricao: `Criar uma função que recebe um número como argumento, essa função deve retornar verdadeiro se o número é múltiplo 7 (e falso quando o número não é múltiplo de 7):
+
     Exemplo
     - função éMúltiploDeSete(35) //retorna o valor true
     - função éMúltiploDeSete(20) //retorna o valor false
@@ -60,6 +63,7 @@ const desafios = [
     resumo:
       'Descobrir se um número é múltiplo de um outro número',
     descricao: `Criar uma função que recebe dois números como argumento, essa função deve retornar verdadeiro se o primeiro número é múltiplo do segundo (e falso quando não for):
+
     Exemplo
     - função éMúltiplo(55, 11) //retorna o valor true
     - função éMúltiplo(20, 7) //retorna o valor false
@@ -72,6 +76,7 @@ const desafios = [
     resumo:
       'Dada uma array, descobrir se algum número dela é par',
     descricao: `Criar uma função que recebe uma array, essa função deve retornar verdadeiro se algum número dela for par (e falso quando não for):
+    
     Exemplo
     - função temPar([3,4,5]) //retorna o valor true
     - função temPar([21, 7]) //retorna o valor false
